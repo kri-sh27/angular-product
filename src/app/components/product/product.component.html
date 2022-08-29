@@ -1,0 +1,10 @@
+<!-- <p>product works!</p> -->
+<body>
+<ul class="list group"  *ngFor="let x of myproduct;let i =index">
+    <li class="list-group-item" *ngIf="x.fav==0">
+        {{x.name}}
+        <button class="btn btn-primary" (click)="delproduct(i)">Delete</button>
+        <button class="btn btn-info" (click)="afav(i)">Add to Favorite</button>
+    </li>
+</ul>
+</body>

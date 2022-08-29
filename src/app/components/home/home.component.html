@@ -1,0 +1,12 @@
+<!-- <p>home works!</p> -->
+<body>
+<div *ngIf="msg=='product'">
+    <app-product [myproduct]="productlist" (rproduct)="delproduct($event)" (addf)="addtofav($event)"></app-product>
+</div>
+<div *ngIf="msg=='addproduct'">
+    <app-addproduct (mynewproduct)="addnewproduct($event)"></app-addproduct>
+</div>
+<div *ngIf="msg=='fav'">
+    <app-myfav [myproduct]="myfav" (rmfav)="remvfav($event)"></app-myfav>
+</div>
+</body>

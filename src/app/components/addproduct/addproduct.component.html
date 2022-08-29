@@ -1,0 +1,4 @@
+<!-- <p>addproduct works!</p> --><body>
+<label for="newproduct">New Product</label>
+<input #product [value]="myproduct" type="text" class="form-control" id="newproduct" (keyup.enter)="addproduct(product.value)"/>
+</body>
